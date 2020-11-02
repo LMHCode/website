@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>首页</title>   
-    <link rel="stylesheet" href="./home.css">
+    <title>首页</title>     
     <link rel="stylesheet" href="../static/css/base.css">
     <link rel="stylesheet" href="../static/css/common.css">
     <link rel="stylesheet" href="../static/css/media.css">
     <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <link rel="stylesheet" href="./home.css">
   </head>
 
   <body>
@@ -445,9 +445,10 @@
   </body>
 
 </html>
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
 <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=c05e55b567892259dab89b3b4a74a96f"></script>
+<script type="text/javascript" src="../static/js/common.js"></script>
 <script>
   (function() {
     // banner
@@ -524,21 +525,6 @@
       });
       marker.setMap(map);
       
-      // 回到顶部监听
-      window.addEventListener('scroll', function (event) {
-        var scrolltopTemp = document.documentElement.scrollTop || document.body.scrollTop
-        var windowHeight = document.documentElement.clientHeight
-        if (document.documentElement.clientHeight < scrolltopTemp) {
-          $('.to-top').css({'display': 'flex'})
-        } else {
-          $('.to-top').css({'display': 'none'})
-        }
-      })
-
-      // 返回顶部
-      $('.to-top').click(function(e) {
-        window.scrollTo(0, 0)
-      })
 
       // 菜单点击切换
       $('.menu-item').click(function(e) {      
@@ -557,29 +543,6 @@
             break
         }
       })
-      
-      // phone 
-      $('.show-phone').hover(function() {
-        $('.service-tell').addClass('service-tell-animation')
-      }, function() {
-        $('.service-tell').removeClass('service-tell-animation')
-      })
-      
-      // code
-      $('.show-code').hover(function() {
-        $('.fixed-code').addClass('fixed-code-animation')
-      }, function() {
-        $('.fixed-code').removeClass('fixed-code-animation')
-      })
-
-      window.onbeforeunload = function (e) {
-        window.scrollTo(0, 0)      
-      }; 
-
-      // 合作伙伴banner
-      function cbannerChange(activeIndex) {
-        console.log(activeIndex)
-      }
 
   })()
 

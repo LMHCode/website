@@ -1,0 +1,87 @@
+.service-areas {
+  padding: 6.5vw 0 5.05vw 0;
+}
+
+.areas-banner {
+  height: 13.17vw;  
+  min-height: 186px;
+  background: #F7FBFF;
+}
+
+.science-item {
+  display: flex;
+  padding: 5.98vw 0 0 0;
+}
+
+.science-item > img {
+  width: 35.79vw;
+}
+
+.science-item > .say-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+.science-item > .say-content > h3 {
+  font-size: 1.66vw;
+  color: #666666;
+}
+
+.science-item > .say-content > h2 {
+  font-size: 2.39vw;
+  font-family: Source Han Sans SC;
+  font-weight: bold;
+  color: #F93C5A;
+  margin-top: 10px;
+}
+
+.science-item > .say-content > h4 {
+  display: block;
+  width: 22.5vw;
+  font-size: 18px;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: #666666;
+  margin-top: 1.77vw;
+}
+
+.science-item2 {
+  position: relative;
+  margin-top: 5.98vw;
+}
+
+.science-item2 > .say-content {
+  margin-left: 6.77vw;
+  padding-right: 1.66vw;
+}
+
+.science-item2 > img {
+  width: 55.57vw;
+  position: absolute;
+  z-index: 2;
+  right: -19.8vw;
+  top: -13.54vw;
+}
+
+.science-item2 > .say-content > h4 {
+  max-width: 14vw;
+}
+
+.science-item3 {
+  padding-top: 21.1vw;
+}
+
+.science-item4 > .say-content > h4 {
+  max-width: 16.87vw;
+}
+
+.science-item4 > img {
+  width: 32vw;
+  margin-left: 4vw;
+}
+
+.science-item4 > .say-content {
+  margin-left: 6.77vw;
+}

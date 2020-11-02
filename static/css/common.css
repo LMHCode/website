@@ -312,12 +312,6 @@
   align-items: center;
 }
 
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .swiper-pagination-bullet {
   background-color: auto;
   border: 1px solid #ffffff;
@@ -374,4 +368,57 @@
 .swiper-button-next4 {
   background-image: url(../image/right-red.png) !important;
   right: 10.5vw !important;
+}
+
+.swiper-button-prev5, .swiper-button-next5 {
+  width: 66px !important;
+  height: 66px !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat;
+}
+
+.swiper-button-prev5 {
+  background-image: url(../image/left-red.png) !important;
+  left: 10.5vw !important;
+}
+
+.swiper-button-next5 {
+  background-image: url(../image/right-red.png) !important;
+  right: 10.5vw !important;
+}
+
+/* service-tags */
+.service-tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 186px;
+  height: 13.18vw;
+  background: #F7FBFF;
+}
+
+.service-tags > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.service-tags > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1.89vw;
+}
+
+.service-tags > ul > li > img {
+  width: 5.73vw;
+  min-width: 80px;
+}
+
+.service-tags > ul > li > span { 
+  font-size: 20px;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: #333333;
+  margin-top: 1.57vw;
 }
