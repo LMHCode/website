@@ -49,6 +49,14 @@
   height: 40px;
 }
 
+.pro-banner {
+  width: 100%;
+}
+
+.pro-banner > img {
+  width: inherit;
+}
+
 /* 标题 */
 .section-titel {
   display: flex;
@@ -529,4 +537,24 @@
 
 .logo-list > ul > li > img {
   width: 100%;
+}
+
+/* map */
+.amap-icon img {
+  width: 25px;
+  height: 34px;
+}
+
+.amap-marker-label{
+  border: 0;
+  background-color: transparent;
+}
+.amap-marker-label > .info {
+  position: relative;
+  top: 0;
+  right: 0;
+  min-width: 0;
+  color: #000000;
+  font-weight: bold;
+  line-height: 25px;
 }
