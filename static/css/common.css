@@ -4,6 +4,9 @@
   margin: 0 auto;
 }
 
+.padding-bottom40 {
+  padding-bottom: 40px;
+}
 
 .padding40 {
   padding: 0 40px;
@@ -58,6 +61,25 @@
   background: #BFBFBF;
 }
 
+.section-titel-red {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7.29vw;
+}
+
+.section-titel-red > h1 {
+  font-weight: 400;
+  font-size: 2.187vw;
+  color: #333333;
+}
+
+.section-titel-red > .red-line {
+  width: 48px;
+  height: 6px;
+  background: #F93C5A;
+  margin-top: 2.395vw;
+}
 
 /* 公用底部 */
 .page-bottom {
@@ -353,36 +375,19 @@
   padding-bottom: 70px;
 }
 
-.swiper-button-prev4, .swiper-button-next4 {
+.swiper-button-prev4, .swiper-button-next4, .swiper-button-prev5, .swiper-button-next5 ,.swiper-button-prev6, .swiper-button-next6  {
   width: 66px !important;
   height: 66px !important;
   background-size: 100% 100% !important;
   background-repeat: no-repeat;
 }
 
-.swiper-button-prev4 {
+.swiper-button-prev4 , .swiper-button-prev5 , .swiper-button-prev6 {
   background-image: url(../image/left-red.png) !important;
   left: 10.5vw !important;
 }
 
-.swiper-button-next4 {
-  background-image: url(../image/right-red.png) !important;
-  right: 10.5vw !important;
-}
-
-.swiper-button-prev5, .swiper-button-next5 {
-  width: 66px !important;
-  height: 66px !important;
-  background-size: 100% 100% !important;
-  background-repeat: no-repeat;
-}
-
-.swiper-button-prev5 {
-  background-image: url(../image/left-red.png) !important;
-  left: 10.5vw !important;
-}
-
-.swiper-button-next5 {
+.swiper-button-next4, .swiper-button-next5, .swiper-button-next6 {
   background-image: url(../image/right-red.png) !important;
   right: 10.5vw !important;
 }
@@ -421,4 +426,96 @@
   font-weight: 400;
   color: #333333;
   margin-top: 1.57vw;
+}
+
+/* ydy服务范围 */
+.ydy-service-area {
+  background-image: url(../image/map-bg.png);
+  background-repeat: no-repeat;
+  background-size: 51.58vw auto;
+  background-position: top right;
+  background-position-y: 2.44vw;
+}
+
+.ydy-service-area > .ydy-service-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8.80vw 0 5.78vw 0;
+}
+
+.ydy-service-area > .ydy-service-title > span {
+  font-size: 24px;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: #333333;
+  margin: 0 0.945vw;
+}
+
+.ydy-service-area > .ydy-service-num {
+  display: flex;
+  margin-bottom: 4.16vw;
+}
+
+.ydy-service-area > .ydy-service-num > .service-num-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5.05vw;
+}
+
+.ydy-service-num > .service-num-item > .num { 
+  font-size: 61px;
+  font-family: Source Han Sans SC;
+  font-weight: bold;
+  color: #F93C5A;
+  margin-bottom: 1.66vw;
+}
+
+.ydy-service-num > .service-num-item > .area { 
+  font-size: 32px;
+  font-family: Source Han Sans SC;
+  font-weight: 300;
+  color: #999999;
+}
+
+.ydy-service-area > .ydy-service-content {
+  max-width: 43.17vw; 
+  font-size: 16px;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: #333333;
+  line-height: 36px;
+}
+
+.ydy-service-area > .cooperative-client {
+  padding: 0;
+  justify-content: center;
+  margin: 10.15vw 0 5.73vw 0;
+}
+
+.logo-list {
+  height: 100%;
+  width: 62.5vw;
+  /* margin: 0 auto; */
+}
+
+/* 合作 */
+.logo-list > ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.logo-list > ul > li {
+  display: flex;
+  width: 20%;
+  padding: 0 0 10px 10px;
+  box-sizing: border-box;
+}
+
+.logo-list > ul > li:nth-child(4n + 1) {
+  padding-left: 0;
+}
+
+.logo-list > ul > li > img {
+  width: 100%;
 }

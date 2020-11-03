@@ -524,25 +524,6 @@
           direction: 'right' //设置文本标注方位
       });
       marker.setMap(map);
-      
-
-      // 菜单点击切换
-      $('.menu-item').click(function(e) {      
-        $(e.target).addClass('active')
-        // console.log('menu', e, e.target.siblings)
-        $(e.target).siblings().removeClass('active')
-        switch (e.target.innerText) {
-          case '首页':
-            // 首页处理逻辑
-            break
-          case '产品介绍':
-            break
-          case '药店联盟':
-            break
-          case '关于我们':
-            break
-        }
-      })
 
   })()
 

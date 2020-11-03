@@ -4,6 +4,24 @@
     window.scrollTo(0, 0)      
   }; 
 
+  // 菜单点击切换
+  $('.menu-item').click(function(e) {      
+    $(e.target).addClass('active')
+    // console.log('menu', e, e.target.siblings)
+    $(e.target).siblings().removeClass('active')
+    switch (e.target.innerText) {
+      case '首页':
+        // 首页处理逻辑
+        break
+      case '产品介绍':
+        break
+      case '药店联盟':
+        break
+      case '关于我们':
+        break
+    }
+  })
+
   // 回到顶部监听
   window.addEventListener('scroll', function (event) {
     var scrolltopTemp = document.documentElement.scrollTop || document.body.scrollTop
@@ -33,4 +51,5 @@
   }, function() {
     $('.fixed-code').removeClass('fixed-code-animation')
   })
+  
 })()

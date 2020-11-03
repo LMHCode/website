@@ -1,0 +1,116 @@
+.section-content {
+  width: 33.85vw;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.937vw;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: #333333;
+  margin: 3.23vw auto 6.666vw;
+  line-height: 1.6vw;
+}
+
+.hw-source > ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.hw-source > ul > li {
+  width: 20%;
+  height: 15.6vw;
+  box-sizing: border-box;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #F93C5A;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cover {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s ease;
+  pointer-events: none;
+}
+
+.hw-source > ul > li:nth-child(1) {
+  width: 40%;  
+}
+
+.hw-source > ul > li > .img, .hw-source > ul > li > .img > img {
+  width: 100%;
+  height: 100%;
+  transition: all .8s ease;
+}
+
+.source-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.source-content > img {
+  width: 4.427vw;
+  margin: 0 auto;
+}
+
+.source-content > p {  
+  font-size: 0.833vw;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 1.354vw;
+  margin-top: 1.197vw;
+  width: 14.22vw;
+}
+
+.media-section {
+  margin-bottom: 8.49vw;
+}
+
+.media-report {
+  margin-top: 5.73vw;
+  margin-bottom: 3.96vw;
+}
+
+.report-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.report-image > .image-content {
+  width: 20.1vw;
+  margin-right: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.report-image > .image-content > .cover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.report-image > .image-content > img {
+  width: 100%;
+  height: 100%;
+  transition: all .5s ease;
+}
+
+.report-image > .image-content:nth-last-child(1) {
+  margin-right: 0;
+} 
