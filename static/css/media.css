@@ -14,6 +14,18 @@
   }
 }
 
+@media (max-width: 1500px) {
+  .news-notice > ul > li {
+    margin-bottom: 0.5vw !important; 
+   }
+  .news-notice {
+    padding-top: 1.2vw !important;
+  }
+  .notice-head {
+    margin-bottom: 0.9vw !important;
+  }
+}
+
 @media (max-width: 1200px) {
   .news-banner-ul > li {
     margin-bottom: 0.4vw !important;
@@ -23,5 +35,20 @@
   }
   .swiper-container3 > .swiper-wrapper > .swiper-slide {
     padding-bottom: 46px !important;
+  }
+  .section-titel-red > h1 {
+    font-size: 24px !important;
+  }
+  .science-item > .say-content > h3 {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .PHONE {
+    display: block;
+  }
+  .PC {
+    display: none;
   }
 }
