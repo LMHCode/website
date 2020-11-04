@@ -207,11 +207,11 @@
 }
 
 .menu > .menu-item { 
-  font-size: 20px;
+  font-size: 1.04vw;
   font-family: Source Han Sans SC;
   font-weight: bold;
   color: #000000;
-  margin-left: 39px;
+  margin-left: 2.03vw;
   padding-bottom: 15px; 
   cursor: pointer; 
 }
