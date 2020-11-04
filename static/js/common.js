@@ -26,7 +26,8 @@
   window.addEventListener('scroll', function (event) {
     var scrolltopTemp = document.documentElement.scrollTop || document.body.scrollTop
     var windowHeight = document.documentElement.clientHeight
-    if (document.documentElement.clientHeight < scrolltopTemp) {
+    console.log(windowHeight, scrolltopTemp)
+    if (windowHeight < scrolltopTemp) {
       $('.to-top').css({'display': 'flex'})
     } else {
       $('.to-top').css({'display': 'none'})

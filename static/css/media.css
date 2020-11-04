@@ -1,7 +1,5 @@
+
 @media (max-width: 1500px) {
-  .news-banner-ul > li {
-    margin-bottom: 0.5vw !important;
-  }
   .news-content > .publish-date {
     margin: 0.4vw 0 !important;
   }
@@ -12,9 +10,6 @@
   section > .section-titel > h1 {
     font-size: 32px !important;
   }
-}
-
-@media (max-width: 1500px) {
   .news-notice > ul > li {
     margin-bottom: 0.5vw !important; 
    }
@@ -23,6 +18,12 @@
   }
   .notice-head {
     margin-bottom: 0.9vw !important;
+  }
+  .crumbs {
+    font-size: 16px !important;
+  }
+  .pages-detail > .titel {
+    font-size: 20px !important;
   }
 }
 
@@ -41,6 +42,9 @@
   }
   .science-item > .say-content > h3 {
     font-size: 20px !important;
+  }
+  .news-list > ul > li > h2 {
+    font-size: 16px !important;
   }
 }
 

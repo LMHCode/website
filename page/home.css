@@ -202,6 +202,15 @@
  cursor: pointer; 
 }
 
+.news-notice > ul > li > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;/*超出3行部分显示省略号，去掉该属性 显示全部*/
+  -webkit-box-orient: vertical;
+}
+
 .news-notice > ul > li > p.date {
   text-align: right;
 }
+

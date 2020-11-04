@@ -1,4 +1,4 @@
-.PHONE {
+.PHONE, .display-no {
   display: none;
 }
 
@@ -557,4 +557,63 @@
   color: #000000;
   font-weight: bold;
   line-height: 25px;
+}
+
+/* 面包屑 */
+.crumbs {
+  display: flex;
+  font-size: 0.9375vw;
+  color: #999999;
+  padding: 2.5vw 0 1.823vw 0;
+}
+
+.crumbs > .crumbs-item {
+  cursor: pointer;
+}
+
+/* 分页 */
+.list-paging {
+  display: flex;
+}
+
+.list-paging > div:first-child, .list-paging > div:last-child {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 14px auto;
+}
+
+.list-paging > .pre {
+  background-image: url(../image/pre1.png);
+}
+
+.list-paging > .next {
+  background-image: url(../image/next1.png);
+}
+
+.next-bg {
+  background-image: url(../image/next.png) !important;
+}
+
+.pre-bg {
+  background-image: url(../image/pre.png) !important;
+}
+
+.list-paging > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  font-size: 16px;
+  border-radius: 2px;
+  background-color: #f4f4f5;
+  color: #606266;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.paging-active {
+  background-color: #409EFF !important;
+  color: #ffffff !important;
 }
