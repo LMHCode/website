@@ -1,3 +1,116 @@
+/* PHONE */
+.phone-me-detial {
+  margin-top: 7.81vw;
+}
+
+.phone-me-detial > .phone-detail-content {
+  padding: 0 5.2vw;
+  margin-top: 7.81vw;
+}
+
+.phone-me-detial > .phone-detail-content > p {
+  font-size: 3.645vw;
+  color: #333333;
+  margin-bottom: 7.81vw;
+}
+
+.phone-me-detial > .phone-detail-content > p > img {
+  width: 100%;
+}
+
+.phone-innovative-service {
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url(../static/image/phone/innov-service-bg.png);
+  background-size: 100% 100%;
+  overflow: hidden;
+  padding: 0 5.2vw 3.9vw 5.2vw;
+}
+
+.phone-innovative-service > .section-titel-red {
+  padding: 9.1145vw 0 7.81vw 0;
+  margin-top: 0;
+}
+
+.phone-innovative-service > .section-titel-red > h1 {
+  color: #ffffff;
+  font-size: 4.166vw;
+}
+
+.phone-innovative-service > .section-titel-red > .red-line {
+  background-color: #ffffff;
+  margin-top: 3.9vw;
+}
+
+.phone-innovative-service > section {
+  color: #ffffff;
+  font-size: 3.125vw;
+  margin-bottom: 8.33vw;
+}
+
+.phone-innovative-service > section > .phone-innovative-titel {
+  font-weight: bold;
+}
+
+.phone-ydy-detial > .phone-ydy-detial-text {
+  font-size: 3.645vw;
+  padding: 0 5.20vw;
+  margin: 16.927vw 0 8.463vw 0;
+}
+
+.phone-ydy-detial > ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5.2vw;
+}
+
+.phone-ydy-detial > ul > li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5.2vw 7.81vw 5.2vw 4.81vw;
+  background-color: #FAFAFA;
+  margin-bottom: 3.385vw;
+}
+
+.phone-ydy-detial > ul > li > img {
+  width: 10.416vw;
+  height: 10.416vw;
+  margin-right: 3.385vw;
+}
+
+.phone-ydy-detial > ul > li > .phone-ydy-steps {
+  color: #2A345C;
+  font-size: 3.125vw;
+}
+
+.phone-ydy-steps > .phone-steps-item {
+  display: flex;
+  margin-bottom: 0.53vw;
+}
+
+.phone-ydy-steps > .phone-steps-item > span {
+  line-height: 1.6;
+}
+
+.phone-ydy-steps > .phone-steps-item > .step-point {
+  width: 1.04vw;
+  height: inherit;
+  margin-right: 2.6vw;
+}
+
+.phone-ydy-steps > .phone-steps-item > .step-point > .point {
+  width: 1.04vw;
+  height: 1.04vw;
+  background: #2A345C;
+  border-radius: 100%;
+  margin-top: 2.1vw;
+}
+
+.phone-marginTop65 {
+  margin-top: 8.46vw !important;
+}
+/* PC */
 .about-me-titel {
   margin: 7.29vw 0 4.166vw;
 }
@@ -36,7 +149,6 @@
   font-family: Source Han Sans SC;
   font-weight: 400;
   color: #333333;
-  line-height: 1.458vw;
 }
 
 .innovative-service {

@@ -1,3 +1,38 @@
+/* phone */
+.phone-notice-list {
+  margin-bottom: 9.7656vw;
+}
+
+.phone-notice-list > ul > li {
+  padding: 2.6vw 0 3.9vw 0;
+  border-bottom: 1px solid rgba(220, 220, 220, 0.29);
+  cursor: pointer;
+}
+
+.phone-notice-list > ul > li > .phone-notice-titel { 
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 4.166vw;
+  color: #333333;
+  margin-bottom: 3.9vw;
+  line-height: 1.6;
+  pointer-events: none;
+}
+
+.phone-notice-list > ul > li > .phone-date {
+  font-size: 3.385vw;
+  color: #666666;
+  pointer-events: none;
+}
+
+.phone-notice-detail {
+  display: none;
+  padding: 6.51vw 5.2vw 15.625vw 5.2vw;
+  box-sizing: border-box;
+}
+/* PC */
 .news-list, .crumbs {
   width: 50vw;
   margin: 0 auto;

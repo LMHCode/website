@@ -1,3 +1,64 @@
+/* Phone */
+.phone-guid-steps {
+  padding: 0 3.90vw;
+  margin-top: 11.068vw;
+}
+
+.phone-guid-steps > section {
+  display: flex;
+  flex-direction: column;
+  color: #666666;
+  background-repeat: no-repeat;
+  min-height: 118.611vw;
+}
+
+.phone-guid-steps > section > h2 {
+  font-size: 4.166vw;
+  padding: 0 1.30vw;
+  margin-bottom: 1.3vw;
+}
+
+.phone-guid-steps > section > h1 {
+  color: #F93C5A;
+  padding: 0 1.30vw;
+  margin-bottom: 3.9vw; 
+  font-weight: bold;
+}
+
+.phone-guid-steps > section > span {
+  font-size: 3.645vw;
+  padding: 0 1.30vw;
+  max-width: 76.5625vw;
+}
+
+.phone-guid-steps > section:nth-child(1) {
+  background-image: url(../static/image/phone/steps1.png);
+  background-size: 88.541vw auto;
+  background-position: center 27.08vw;
+}
+
+.phone-guid-steps > section:nth-child(2) {
+  background-image: url(../static/image/phone/steps2.png);
+  background-size: 88.541vw auto;
+  background-position: center -1.92vw;
+  margin-top: 11.718vw;
+}
+
+.phone-guid-steps > section:nth-child(3) {
+  background-image: url(../static/image/phone/steps3.png);
+  background-size: 88.541vw auto;
+  background-position: center 27.08vw;
+  margin-top: 11.718vw;
+}
+
+.phone-guid-steps > section:nth-child(4) {
+  background-image: url(../static/image/phone/steps4.png);
+  background-size: 88.541vw auto;
+  background-position: center 27.08vw;
+  margin-top: 11.718vw;
+}
+
+/* PC */
 .service-areas {
   padding: 6.5vw 0 5.05vw 0;
 }

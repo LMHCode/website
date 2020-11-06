@@ -1,3 +1,151 @@
+
+/* phone */
+.swiper-pagination-phone1 {
+  bottom: 2.864vw !important;
+  line-height: 0 !important;
+}
+
+.swiper-pagination-phone1 > .swiper-pagination-bullet {
+  margin: 0 0.976vw !important;
+}
+
+.phone-broadcast {
+  display: flex;
+  height: 10.42vw;
+  min-height: 40px;
+  margin-top: 5.9vw;
+}
+
+.phone-broadcast > .phone-broadcast-titel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 16.93vw;
+  min-width: 60px;
+  height: 100%;
+  background-image: url(../static/image/phone/news-titel-bg.png);
+  background-size: 100% 100%;
+}
+
+.phone-broadcast-item {
+  font-size: 3.645vw;
+  color: #666666;
+  width: 67.834vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.phone-broadcast-titel > p {
+  color: #005DC5;
+  font-size: 2.86vw;
+}
+
+.swiper-container-phone2 > .swiper-wrapper > .swiper-slide {
+  text-align: left;
+  justify-content: flex-start;
+  padding-left: 3.385vw;
+  box-sizing: border-box;
+}
+
+.phone-product-intro {
+  padding: 0 5.2vw;
+  box-sizing: border-box;
+  margin-top: 7.81vw;
+}
+
+.phone-product-intro > .phone-intro-titel { 
+  font-size: 4.166vw;
+  font-family: Source Han Sans SC;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 5.2vw;
+}
+
+.phone-product-intro > .phone-intro-content {
+  font-size: 3.645vw;
+  font-family: Source Han Sans SC;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 7.81vw;
+}
+
+.phone-product-intro > img {
+  width: 100%;
+}
+
+.phone-news-info {
+  background-color: #0C60D5;
+  padding-top: 8.7239vw;
+}
+
+.phone-news-info > .phone-section-titel {
+  margin-bottom: 4.427vw;
+}
+
+.phone-news-info > .phone-section-titel > span {
+  color: #FFFFFF;
+}
+
+.phone-news-info > .phone-section-titel > .phone-line {
+  background-color: #FFFFFF;
+}
+
+.phone-news-list {
+  width: 100%;
+}
+
+.phone-news-list > ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5.6vw;
+  box-sizing: border-box;
+  padding-bottom: 20.83vw;
+}
+
+.phone-news-list > ul > li {
+  display: flex;
+  flex-direction: column;
+  padding: 6.25vw 0 3.9vw 0;
+  color: #FFFFFF;
+  border-bottom: 2px solid rgba(225, 225, 225, 0.29);
+}
+
+.phone-news-list > ul > li > h3 {
+  font-size: 3.645vw;
+  margin-bottom: 1.3vw;
+  text-align: left;
+}
+
+.phone-news-list > ul > li > span {
+  font-size: 2.734vw;
+  text-align: left;
+}
+
+.swiper-container-phone5 > .swiper-wrapper > .swiper-slide {
+  justify-content: flex-start;
+}
+
+.swiper-button-next-phone5, .swiper-button-prev-phone5 {
+  top: auto;
+  bottom: 6.51vw;
+  width: 7.8125vw;
+  background-size: 100% auto;
+  background-position: left bottom;
+}
+
+.swiper-button-next-phone5 {
+  background-image: url(../static/image/right-btn.png);
+  right: 35.8vw;
+}
+
+.swiper-button-prev-phone5 {
+  background-image: url(../static/image/left-btn.png);
+  left: 35.8vw;
+}
+
+/* pc */
 .home {
   width: 100%;
   overflow: hidden;

@@ -1,3 +1,122 @@
+/* PHONE */
+.phone-hw-souce {
+  padding-top: 7.8125vw;
+}
+
+.phone-hw-souce > .phone-source-text { 
+  font-size: 3.385vw;
+  color: #333333;
+  max-width: 77.734vw;
+  margin: 6.4vw auto 0;
+  text-align: center;
+  line-height: 1.6;
+
+}
+
+.phone-hw-souce > ul {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 8.59vw;
+}
+
+.phone-hw-souce > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  background-color: #F93C5A;
+  color: #ffffff;
+  padding: 5.208vw 3.9vw 3.9vw;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.phone-hw-souce > ul > li > span {
+  font-size: 2.864vw;
+  line-height: 1.6;
+}
+
+.phone-hw-souce > ul > li > img {
+  width: 11.197vw;
+  margin-bottom: 4.166vw;
+}
+
+.phone-hw-souce > ul > li:nth-child(2) {
+  background-image: url(../static/image/phone/source1-bg.png);
+}
+
+.phone-hw-souce > ul > li:nth-child(3) {
+  background-image: url(../static/image/phone/source2-bg.png);
+}
+
+.phone-media-report {
+  margin-bottom: 13.671vw;
+}
+
+.phone-media-report > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5.468vw;
+}
+
+.phone-media-report > ul > li {
+  width: 29.16vw;
+  height: 42.96vw;
+  object-fit: cover;
+  margin-right: 0.911vw;
+  position: relative;
+}
+
+.phone-media-report > ul > li:nth-child(3) {
+  margin-right: 0;
+}
+
+.phone-media-report > ul > li > img {
+  width: 100%;
+  height: 100%;
+}
+
+.cover-black {
+  position: absolute;
+  z-index: 22;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #ffffff;
+  font-size: 2.343vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 5.2vw 1.3vw;
+  box-sizing: border-box;
+}
+
+.cover-black > .media-titel {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 1.3vw;
+}
+
+.cover-black > .author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cover-black > .author > .author-line {
+  width: 2.99vw;
+  height: 1px;  
+  background: #FFFFFF;
+  margin-right: 0.65vw;
+}
+/* PC */
 .section-content {
   width: 33.85vw;
   margin: 0 auto;
@@ -46,6 +165,45 @@
   justify-content: center;
   transition: all .5s ease;
   pointer-events: none;
+  color: #ffffff;
+}
+
+.image-content > .cover {
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 4.166vw 1.458vw;
+  box-sizing: border-box;
+}
+
+.img-active {
+  background: linear-gradient(to bottom, transparent , #0C60D5 100%) !important;
+}
+
+.image-content > .cover > .meida-section-titel {
+  width: 100%;
+  font-size: 1.25vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0.833vw;
+}
+
+.meida-author-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.meida-author-name > .author-lines {
+  width: 2.08vw;
+  height: 1px;
+  background: #FFFFFF;
+  margin-right: 0.4687vw;
+}
+
+.meida-author-name > span {
+  font-size: 1.04vw;
 }
 
 .hw-source > ul > li:nth-child(1) {
