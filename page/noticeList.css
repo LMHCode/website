@@ -30,7 +30,9 @@
 .phone-notice-detail {
   padding: 6.51vw 5.2vw 15.625vw 5.2vw;
   box-sizing: border-box;
+  flex: 1
 }
+
 /* PC */
 .news-list, .crumbs {
   width: 50vw;

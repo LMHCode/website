@@ -5,11 +5,24 @@
 .PHONE {
   min-height: 100%;
 }
+
 .margin-top110 {
   margin-top: 14.32vw;
 }
 
+.padding-top110 {
+  padding-top: 14.32vw;
+}
+
+.min-height100vh {
+  min-height: 100vh;
+}
+
 /* PHONE */
+.phone-place {
+  display: flex;
+  flex-direction: column;
+}
 
 .phone-head-menu {
   position: fixed;
@@ -169,8 +182,6 @@
 .phone-page-bottom {
   padding: 5.2vw 6.51vw 5.2vw;
   background-color: #3B3C42;
-  position: absolute;
-  bottom: 0;
 }
 
 .phone-page-bottom > .phone-logo-code {
@@ -355,6 +366,7 @@
   color: #999999;
   display: none;
 }
+
 /* PC */
 
 .content-max-width {
