@@ -28,7 +28,6 @@
 }
 
 .phone-notice-detail {
-  display: none;
   padding: 6.51vw 5.2vw 15.625vw 5.2vw;
   box-sizing: border-box;
 }
@@ -96,4 +95,11 @@
   font-size: 14px;
   color: #333333;
   margin-bottom: 2.39vw;
+}
+
+.notice-detail-tag {
+  max-width: 10.4vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }

@@ -83,5 +83,17 @@
   }, function() {
     $('.fixed-code').removeClass('fixed-code-animation')
   })
+
+  // 更改2020/11/6
+  changBottom()
+  function changBottom () {
+    var heights = $('.phone-page-bottom').height()
+    $('.bottom-place').css({
+      height: heights + 'px'     
+    })
+  }
   
+  window.onresize = function () {
+    changBottom()
+  }
 })()

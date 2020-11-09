@@ -217,10 +217,23 @@
             <div class="phone-date">2020-08-21</div>
           </li>
         </ul>
-        <div class="phone-loading-more">没有更多数据</div>
+        <!-- <div class="phone-loading-more">没有更多数据</div> -->
+        <div class="list-paging phone-list-paging">
+          <div class="pre"></div>
+          <div class="nums">1</div>
+          <div class="nums">2</div>
+          <div class="nums">3</div>
+          <div class="nums">4</div>
+          <div class="nums-ignore">...</div>
+          <div class="nums">20</div>
+          <div class="next"></div>
+        </div>
       </div>
 
       <!-- page bottom -->
+      <!-- // 更改2020/11/6 -->
+      <div class="bottom-place"></div>
+      
       <div class="phone-page-bottom">
         <div class="phone-logo-code">
           <div class="phone-logo-tell">
@@ -251,114 +264,120 @@
 <script>
   (function() {
     // Phone
-    var startX, startY, moveEndY, Y
+    // var startX, startY, moveEndY, Y
 
-    function isMobile() {
-      var sUserAgent = navigator.userAgent.toLowerCase();
-      //var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-      var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-      var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-      var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-      var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-      var bIsAndroid = sUserAgent.match(/android/i) == "android";
-      var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-      var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-      return bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM;
-    };
+    // function isMobile() {
+    //   var sUserAgent = navigator.userAgent.toLowerCase();
+    //   //var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+    //   var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+    //   var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+    //   var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+    //   var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+    //   var bIsAndroid = sUserAgent.match(/android/i) == "android";
+    //   var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+    //   var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+    //   return bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM;
+    // };
 
-    // mouse事件
-    if (!isMobile()) {
-      // 非手机环境 小窗口 用mouse鼠标事件
-      var isMouseing = false
-      $(".phone-notice-list").on("mousedown", function(e) {
-        isMouseing = true
-        // console.log(e.pageY)
-        e.preventDefault();
-        startY = e.pageY;
-      });
+    // // mouse事件
+    // if (!isMobile()) {
+    //   // 非手机环境 小窗口 用mouse鼠标事件
+    //   Y = 0
+    //   var isMouseing = false
+    //   $(".phone-notice-list").on("mousedown", function(e) {
+    //     isMouseing = true
+    //     console.log('mousedown', isMouseing)
+    //     // console.log(e.pageY)
+    //     e.preventDefault();
+    //     startY = e.pageY;
+    //   });
 
-      $(".phone-notice-list").on("mouseleave", function(e) {
-        e.preventDefault();
-        $('.phone-loading').css({
-          height: 0 + 'px'
-        })
-        if (Y < -10) { // 上滑加载更多
-          console.log('下滑加载更多')
-        } else if (Y > 10){  // 下拉加载
-          console.log('下拉加载1')
-        } else {
-          console.log('mouse', $(e.target)[0])
-        }
-        Y = 0
-        isMouseing = false
-      });
+    //   $(".phone-notice-list").on("mousemove", function(e) {
+    //     if (!isMouseing) {
+    //       return
+    //     }  
+    //     console.log('mousemove', isMouseing)
+    //     e.preventDefault();  
+    //     moveEndY = e.pageY,
+    //     Y = moveEndY - startY;
+    //     if (Y > 40) {
+    //       $('.loading-text').show()
+    //     } else {
+    //       $('.loading-text').hide()
+    //     }
+    //     if (Y >= 60) {
+    //       Y = 60
+    //     } 
+    //     if (Y > 0) {
+    //       $('.phone-loading').css({
+    //         height: Y + 'px'
+    //       })
+    //     }      
+    //   });
 
-      $(".phone-notice-list").on("mousemove", function(e) {
-        e.preventDefault();
-        if (!isMouseing) {
-          return
-        }
-        // console.log('mousemove')      
-        moveEndY = e.pageY,
-        Y = moveEndY - startY;
-        if (Y > 40) {
-          $('.loading-text').show()
-        } else {
-          $('.loading-text').hide()
-        }
-        if (Y >= 60) {
-          Y = 60
-        } 
-        if (Y > 0) {
-          $('.phone-loading').css({
-            height: Y + 'px'
-          })
-        }      
-      });
-    } else {
-      // 手机端滑动事件
-      $(".phone-notice-list").on("touchstart", function(e) {
-        e.preventDefault();
-        startY = e.originalEvent.changedTouches[0].pageY;
-        // console.log('startx,starty', startX, startY)
-      });
+    //   $(".phone-notice-list").on("mouseup", function(e) {
+    //     isMouseing = false
+    //     e.preventDefault(); 
+    //     // console.log(Y)
+    //     if (Y < -10) { // 上滑加载更多
+    //       console.log('下滑加载更多')
+    //     } else if (Y > 10){  // 下拉加载
+    //       console.log('下拉加载1')
+    //     } else {
+    //       console.log('mouse', $(e.target)[0])
+    //     }
+    //     Y = 0
+    //     $('.phone-loading').css({
+    //       height: 0 + 'px'
+    //     })
+    //     console.log('mouseup', isMouseing)
+    //   });
+      
+    // } else {
+    //   // 手机端滑动事件
+    //   Y = 0
+    //   $(".phone-notice-list").on("touchstart", function(e) {
+    //     e.preventDefault();
+    //     startY = e.originalEvent.changedTouches[0].pageY;
+    //     // console.log('startx,starty', startX, startY)
+    //   });
 
-      $(".phone-notice-list").on("touchend", function(e) {
-        e.preventDefault();
-        $('.phone-loading').css({
-          height: 0 + 'px'
-        })
-        // console.log(Y)
-        if (Y < -10) { // 上滑加载更多
-          console.log('下滑加载更多')
-        } else if (Y > 10){  // 下拉加载
-          console.log('下拉加载')
-        } else { // 点击列表单项
-          console.log('click li', $(e.target)[0])
-        }
-        Y = 0
-      });
+    //   $(".phone-notice-list").on("touchend", function(e) {
+    //     e.preventDefault();
+    //     $('.phone-loading').css({
+    //       height: 0 + 'px'
+    //     })
+    //     // console.log(Y)
+    //     if (Y < -10) { // 上滑加载更多
+    //       console.log('下滑加载更多')
+    //     } else if (Y > 10){  // 下拉加载
+    //       console.log('下拉加载')
+    //     } else { // 点击列表单项
+    //       console.log('click li', $(e.target)[0])
+    //     }
+    //     Y = 0
+    //   });
 
-      $(".phone-notice-list").on("touchmove", function(e) {
-        e.preventDefault();
-        moveEndY = e.originalEvent.changedTouches[0].pageY,
-        Y = moveEndY - startY;
-        // console.log(Y)
-        if (Y > 40) {
-          $('.loading-text').show()
-        } else {
-          $('.loading-text').hide()
-        }
-        if (Y >= 60) {
-          Y = 60
-        } 
-        if (Y > 0) {
-          $('.phone-loading').css({
-            height: Y + 'px'
-          })
-        }      
-      });
-    }
+    //   $(".phone-notice-list").on("touchmove", function(e) {
+    //     e.preventDefault();
+    //     moveEndY = e.originalEvent.changedTouches[0].pageY,
+    //     Y = moveEndY - startY;
+    //     // console.log(Y)
+    //     if (Y > 40) {
+    //       $('.loading-text').show()
+    //     } else {
+    //       $('.loading-text').hide()
+    //     }
+    //     if (Y >= 60) {
+    //       Y = 60
+    //     } 
+    //     if (Y > 0) {
+    //       $('.phone-loading').css({
+    //         height: Y + 'px'
+    //       })
+    //     }      
+    //   });
+    // }
 
     // PC
     var page = 1
@@ -370,7 +389,7 @@
       for(i = 0; i < domArr.length; i ++) {
         domArr[i].style.display = 'none'
       }
-      console.log($(e.target).attr('name'))
+      // console.log($(e.target).attr('name'))
       var domName = $(e.target).attr('name')
       if (domName === 'item1') {
         // 跳到首页处理逻辑     
@@ -389,10 +408,10 @@
       var j;
       for(j = 0; j < numsDomArr.length; j ++) {
         if (numsDomArr[j].innerText == page) {
-          console.log($(numsDomArr[j]).siblings(".nums"))      
+          // console.log($(numsDomArr[j]).siblings(".nums"))      
           $(numsDomArr[j]).addClass('paging-active')
         } else {
-          console.log(j)
+          // console.log(j)
           $(numsDomArr[j]).removeClass('paging-active')
         }
       }
