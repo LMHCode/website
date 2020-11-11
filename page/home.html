@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>首页</title> 
     
-    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>    
+    <!-- <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>     -->
     <link rel="stylesheet" href="../static/css/base.css">
     <link rel="stylesheet" href="../static/css/common.css">
     <link rel="stylesheet" href="../static/css/media.css">
@@ -1243,9 +1243,9 @@
           el: '.swiper-scrollbar',
         },
       });
+
       // pc banner
-      var swiper1 = new Swiper('.swiper-container1', {
-        
+      var swiper1 = new Swiper('.swiper-container1', {      
         speed: 2000,
         autoplay: {
           autoplay: true,
@@ -1268,8 +1268,7 @@
           stopOnLastSlide: false,
           disableOnInteraction: false,
           delay: 4000,// 1秒切换一次 
-        },
-        
+        },    
         loop : true,
         pagination: {
           el: '.swiper-pagination2',
@@ -1297,8 +1296,7 @@
       });
 
       
-      var swiper5 = new Swiper('.swiper-container5', {
-        
+      var swiper5 = new Swiper('.swiper-container5', {      
         speed: 1000,
         navigation: {
           nextEl: '.swiper-button-next5',
