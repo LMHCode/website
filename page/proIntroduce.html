@@ -199,10 +199,6 @@
                 <a href="">加入我们</a>
               </div>
             </div>
-            <div class="codes">
-              <img src="../static/image/code.png" alt="">
-              <span>关注公众号</span>
-            </div>
           </div> 
           
           <div class="copy-right-call">
@@ -221,6 +217,10 @@
                 <img src="../static/image/user-icon.png" alt="">
                 <span>联盟系统登录</span>
               </div> -->
+              <div class="codes">            
+                <span>关注公众号</span>
+                <img src="../static/image/code.png" alt="">
+              </div>
               <div class="hot-call">
                 <span>服务热线</span> 
                 <h3>400-803-6136</h3>
@@ -286,35 +286,71 @@
       <!-- service area -->
       <div class="phone-service-area">
         <div class="phone-section-titel margin-top110">
-          <div class="phone-line"></div>
+          <!-- 更改2020/11/10 -->
           <span>服务范围</span>
-          <div class="phone-line"></div>
         </div>
-        <div class="phone-service-list">
-          <div class="phone-service-item">
-            <img src="../static/image/service-icon1.png" alt="">
-            <span>肿瘤用药</span>
+        <!-- 更改2020/11/10 -->
+        <!-- Swiper -->
+        <div class="swiper-container swiper-container-phone6">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="phone-service-list">
+                <div class="phone-service-item">
+                  <img src="../static/image/service-icon1.png" alt="">
+                  <span>肿瘤用药</span>
+                </div>
+                <div class="phone-service-item">
+                  <img src="../static/image/service-icon2.png" alt="">
+                  <span>高血压</span>
+                </div>
+                <div class="phone-service-item">
+                  <img src="../static/image/service-icon3.png" alt="">
+                  <span>糖尿病</span>
+                </div>
+                <div class="phone-service-item">
+                  <img src="../static/image/service-icon4.png" alt="">
+                  <span>高血脂</span>
+                </div>
+                <div class="phone-service-item">
+                  <img src="../static/image/service-icon5.png" alt="">
+                  <span>心脑血管</span>
+                </div>
+                <div class="phone-service-item">
+                  <img src="../static/image/service-icon6.png" alt="">
+                  <span>营养保健</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="phone-service-list">
+                <div class="phone-service-item">
+                  <img src="../static/image/service-icon1.png" alt="">
+                  <span>肿瘤用药</span>
+                </div>
+                <div class="phone-service-item">
+                  <img src="../static/image/service-icon2.png" alt="">
+                  <span>高血压</span>
+                </div>
+                <div class="phone-service-item">
+                  <img src="../static/image/service-icon3.png" alt="">
+                  <span>糖尿病</span>
+                </div>
+                <div class="phone-service-item">
+                  <img src="../static/image/service-icon4.png" alt="">
+                  <span>高血脂</span>
+                </div>
+                <div class="phone-service-item">
+                  <img src="../static/image/service-icon5.png" alt="">
+                  <span>心脑血管</span>
+                </div>
+                <div class="phone-service-item">
+                  <img src="../static/image/service-icon6.png" alt="">
+                  <span>营养保健</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="phone-service-item">
-            <img src="../static/image/service-icon2.png" alt="">
-            <span>高血压</span>
-          </div>
-          <div class="phone-service-item">
-            <img src="../static/image/service-icon3.png" alt="">
-            <span>糖尿病</span>
-          </div>
-          <div class="phone-service-item">
-            <img src="../static/image/service-icon4.png" alt="">
-            <span>高血脂</span>
-          </div>
-          <div class="phone-service-item">
-            <img src="../static/image/service-icon5.png" alt="">
-            <span>心脑血管</span>
-          </div>
-          <div class="phone-service-item">
-            <img src="../static/image/service-icon6.png" alt="">
-            <span>营养保健</span>
-          </div>
+          <div class="swiper-scrollbar"></div>
         </div>
       </div>
 
@@ -379,12 +415,26 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
 <script type="text/javascript" src="../static/js/common.js"></script>
 <script>
-  var swiper5 = new Swiper('.swiper-container5', {
-    // cssMode: true,
-    loop : true,
-    navigation: {
-      nextEl: '.swiper-button-next5',
-      prevEl: '.swiper-button-prev5',
-    },
-  });
+  // 更改2020/11/10 整个改掉
+  swipeStart()
+  window.onresize = function() {
+    swipeStart()
+  }
+
+  function swipeStart() {
+    var swiperPhone6 = new Swiper('.swiper-container-phone6', {
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+
+    var swiper5 = new Swiper('.swiper-container5', { 
+      speed: 1000,
+      navigation: {
+        nextEl: '.swiper-button-next5',
+        prevEl: '.swiper-button-prev5',
+      },
+    });
+  }
+ 
 </script>

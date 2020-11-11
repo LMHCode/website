@@ -333,10 +333,6 @@
                 <a href="">加入我们</a>
               </div>
             </div>
-            <div class="codes">
-              <img src="../static/image/code.png" alt="">
-              <span>关注公众号</span>
-            </div>
           </div> 
           
           <div class="copy-right-call">
@@ -355,6 +351,10 @@
                 <img src="../static/image/user-icon.png" alt="">
                 <span>联盟系统登录</span>
               </div> -->
+              <div class="codes">            
+                <span>关注公众号</span>
+                <img src="../static/image/code.png" alt="">
+              </div>
               <div class="hot-call">
                 <span>服务热线</span> 
                 <h3>400-803-6136</h3>
@@ -428,22 +428,23 @@
           为战略联盟合作签约药店提供全套解决方案。          
         </div>
         <ul>
+          <!-- 更改2020/11/10 -->
           <li>
             <img src="../static/image/car-icon.png" alt="">
             <span>· 药店联盟集团化采购，提升议价能力，降低采购成本</span>
             <span>· 获得医药生产企业供给各大公立医疗机构的药品品种</span>
           </li>
           <li>
-            <img src="../static/image/car-icon.png" alt="">
+            <img src="../static/image/handle-shake-icon.png" alt="">
             <span>·全套专业物流设备，专业配送团队进行冷链产品配送 </span>
             <span>· 冷链产品运输全程监控，防范运输风险，保证配送安全</span>
           </li>
           <li>
-            <img src="../static/image/car-icon.png" alt="">
+            <img src="../static/image/net-icon.png" alt="">
             <span>将网络效应从线上复制到线下，为药店联盟用户提供同质同价产品，精准获客，提供用户粘性。 </span>
           </li>
           <li>
-            <img src="../static/image/car-icon.png" alt="">
+            <img src="../static/image/house-icon.png" alt="">
             <span>海王24年门店运营管理，品类管理、慢病管理的经验为联盟药店赋能，提高服务效率，降低运营成本。 </span>
           </li>
         </ul>
@@ -453,9 +454,8 @@
       <div class="phone-ydy-cover">
         <div class="phone-cover-content">
           <div class="phone-section-titel">
-            <div class="phone-line"></div>
+            <!-- 更改2020/11/10 -->
             <span>易点药联盟覆盖范围</span>
-            <div class="phone-line"></div>
           </div>
           <div class="phone-area-num">
             <div class="phone-num-item">
@@ -478,11 +478,11 @@
       </div>
 
       <!-- cooperative client 合作客户 -->
+      <!-- 更改2020/11/10 -->
       <div class="phone-coor-client">
         <div class="phone-section-titel">
-          <div class="phone-line"></div>
+          <!-- 更改2020/11/10 -->
           <span>合作客户</span>
-          <div class="phone-line"></div>
         </div>
         <div class="phone-cooperative-banner">
           <!-- Swiper -->
@@ -565,8 +565,9 @@
               </div>
             </div>
             <!-- Add Arrows -->
-            <div class="swiper-button-next swiper-button-next-phone6"></div>
-            <div class="swiper-button-prev swiper-button-prev-phone6"></div>
+            <!-- <div class="swiper-button-next swiper-button-next-phone6"></div>
+            <div class="swiper-button-prev swiper-button-prev-phone6"></div> -->
+            <div class="swiper-scrollbar"></div>
             <!-- Add Pagination -->
             <!-- <div class="swiper-pagination swiper-pagination3"></div> -->
           </div>
@@ -656,7 +657,9 @@
     // PHONE 
     var swiperPhone6 = new Swiper('.swiper-container-phone6', {
       // cssMode: true,
-      loop : true,
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
       navigation: {
         nextEl: '.swiper-button-next-phone6',
         prevEl: '.swiper-button-prev-phone6',
@@ -667,7 +670,6 @@
     // 合作
     var swiper6 = new Swiper('.swiper-container6', {
       // cssMode: true,
-      loop : true,
       navigation: {
         nextEl: '.swiper-button-next6',
         prevEl: '.swiper-button-prev6',

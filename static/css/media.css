@@ -1,3 +1,8 @@
+@media (max-width: 1800px) {
+  .news-notice > ul > li {
+    margin-bottom: 0.25vw !important; 
+   }
+}
 
 @media (max-width: 1500px) {
   .news-content > .publish-date {

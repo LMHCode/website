@@ -16,6 +16,7 @@
   font-size: 4.166vw;
   padding: 0 1.30vw;
   margin-bottom: 1.3vw;
+  font-weight: normal;
 }
 
 .phone-guid-steps > section > h1 {
@@ -61,12 +62,6 @@
 /* PC */
 .service-areas {
   padding: 6.5vw 0 5.05vw 0;
-}
-
-.areas-banner {
-  height: 13.17vw;  
-  min-height: 186px;
-  background: #F7FBFF;
 }
 
 .science-item {

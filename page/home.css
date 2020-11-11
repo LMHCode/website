@@ -181,10 +181,9 @@
 
 .pro-intro > h3{
   font-size: 16px; 
-  
+  line-height: 1.6;
   font-weight: 400;
   color: #333333;
-  line-height: 24px;
 }
 
 .pro-intro > h3:nth-child(2) {
@@ -314,6 +313,14 @@
   object-fit: cover;
 }
 
+.swiper-pagination1 {
+  bottom: 22px !important;
+}
+
+.swiper-pagination1 > .swiper-pagination-bullet {
+  margin: 0 7px !important;
+}
+
 .news-notice {
   position: absolute;
   z-index: 20;
@@ -327,7 +334,8 @@
   color: #FFFFFF;
   background-color: rgba(34, 34, 38, 0.22);
   padding: 2.08vw 1.25vw 0 0.78vw;
-  font-size: 0.729vw;
+  font-size: 0.625vw;
+  box-sizing: border-box;
 }
 
 .news-notice > .notice-head {
@@ -345,10 +353,11 @@
 
 .news-notice > .notice-head > .notice-head-titel {
   font-size: 0.9375vw;
+  line-height: 1.5;
 }
 
 .news-notice > ul > li {
- margin-bottom: 0.5265vw;
+ margin-bottom: 0.8vw;
  cursor: pointer; 
 }
 
@@ -358,9 +367,11 @@
   display: -webkit-box;
   -webkit-line-clamp: 2;/*超出3行部分显示省略号，去掉该属性 显示全部*/
   -webkit-box-orient: vertical;
+  line-height: 1.5;
 }
 
 .news-notice > ul > li > p.date {
   text-align: right;
+  line-height: 1.5;
 }
 
