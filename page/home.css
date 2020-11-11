@@ -57,7 +57,7 @@
 
 .phone-product-intro > .phone-intro-titel { 
   font-size: 4.166vw;
-  font-family: Source Han Sans SC;
+  
   font-weight: bold;
   color: #333333;
   margin-bottom: 5.2vw;
@@ -65,7 +65,7 @@
 
 .phone-product-intro > .phone-intro-content {
   font-size: 3.645vw;
-  font-family: Source Han Sans SC;
+  
   font-weight: 400;
   color: #333333;
   margin-bottom: 7.81vw;
@@ -131,6 +131,7 @@
   top: auto;
   bottom: 6.51vw;
   width: 7.8125vw;
+  height: 7.8125vw;
   background-size: 100% auto;
   background-position: left bottom;
 }
@@ -180,7 +181,7 @@
 
 .pro-intro > h3{
   font-size: 16px; 
-  font-family: Source Han Sans SC;
+  
   font-weight: 400;
   color: #333333;
   line-height: 24px;
@@ -214,7 +215,7 @@
 .service-area > .service-head > .service-titel > span {
   margin: 0 0.945vw;
   font-size: 24px;
-  font-family: Source Han Sans SC;
+  
   font-weight: 400;
   color: #333333;
 }
@@ -339,6 +340,7 @@
 
 .notice-see-more {
   cursor: pointer;
+  font-size: 0.625vw;
 }
 
 .news-notice > .notice-head > .notice-head-titel {
@@ -346,7 +348,7 @@
 }
 
 .news-notice > ul > li {
- margin-bottom: 1.5265vw;
+ margin-bottom: 0.5265vw;
  cursor: pointer; 
 }
 

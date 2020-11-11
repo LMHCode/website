@@ -88,11 +88,12 @@
 .science-item > .say-content > h3 {
   font-size: 1.66vw;
   color: #666666;
+  font-weight: normal;
 }
 
 .science-item > .say-content > h2 {
   font-size: 2.39vw;
-  font-family: Source Han Sans SC;
+  
   font-weight: bold;
   color: #F93C5A;
   margin-top: 10px;
@@ -102,10 +103,10 @@
   display: block;
   width: 22.5vw;
   font-size: 18px;
-  font-family: Source Han Sans SC;
   font-weight: 400;
   color: #666666;
   margin-top: 1.77vw;
+  line-height: 1.7;
 }
 
 .science-item2 {

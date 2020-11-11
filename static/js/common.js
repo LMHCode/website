@@ -71,10 +71,17 @@
   })
 
    // phone 
+  //  更改2020/11/10
    $('.show-phone').hover(function() {
-    $('.service-tell').addClass('service-tell-animation')
+    $(this).css({
+      width: '220px',
+      backgroundColor: '#1657A7'
+    })
   }, function() {
-    $('.service-tell').removeClass('service-tell-animation')
+    $(this).css({
+      width: '46px',
+      backgroundColor: '#3B3C42',
+    })
   })
   
   // code

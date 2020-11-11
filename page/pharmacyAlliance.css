@@ -122,7 +122,7 @@
   margin: 0 auto;
   text-align: center;
   font-size: 0.937vw;
-  font-family: Source Han Sans SC;
+  
   font-weight: 400;
   color: #333333;
   margin: 3.23vw auto 6.666vw;
@@ -177,7 +177,7 @@
 }
 
 .img-active {
-  background: linear-gradient(to bottom, transparent , #0C60D5 100%) !important;
+  /* background: linear-gradient(to bottom, transparent , #0C60D5 100%) !important; */
 }
 
 .image-content > .cover > .meida-section-titel {
@@ -228,7 +228,7 @@
 
 .source-content > p {  
   font-size: 0.833vw;
-  font-family: Source Han Sans SC;
+  
   font-weight: 400;
   color: #FFFFFF;
   line-height: 1.354vw;
