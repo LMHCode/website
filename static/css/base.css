@@ -15,3 +15,6 @@ button, input, select, textarea { font-size:100%; }
 table { border-collapse:collapse; border-spacing:0; }
 a {-webkit-tap-highlight-color: rgba(255, 255, 255, 0);-webkit-user-select: none;-moz-user-focus: none;-moz-user-select: none;}
 a:-webkit-any-link {color: auto !important; color: unset !important;}
+html, body {
+  width: 100vw;
+}
