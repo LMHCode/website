@@ -50,6 +50,10 @@
         break
       case '关于我们':
         break
+      case '联盟系统登陆':
+        // 更改2020/11/11
+        window.location.href = 'https://lm.edianyao.com/login'
+        break
     }
   })
 
@@ -71,7 +75,7 @@
   })
 
    // phone 
-  //  更改2020/11/10
+  
    $('.show-phone').hover(function() {
     $(this).css({
       width: '220px',
