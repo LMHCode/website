@@ -40,6 +40,8 @@
 .phone-broadcast-titel > p {
   color: #005DC5;
   font-size: 2.86vw;
+  font-weight: bold;
+  line-height: 1.4;
 }
 
 .swiper-container-phone2 > .swiper-wrapper > .swiper-slide {
@@ -109,13 +111,17 @@
   flex-direction: column;
   padding: 6.25vw 0 3.9vw 0;
   color: #FFFFFF;
-  border-bottom: 2px solid rgba(225, 225, 225, 0.29);
+  border-bottom: 1px solid rgba(225, 225, 225, 0.15);
 }
 
 .phone-news-list > ul > li > h3 {
   font-size: 3.645vw;
   margin-bottom: 1.3vw;
   text-align: left;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .phone-news-list > ul > li > span {

@@ -5,7 +5,7 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>药店联盟</title> 
-    <!-- 更改2020/11/11 -->
+    
     <link rel="shortcut icon" href="../static/image/titel-logo-icon.png" type="image/x-icon">  
     <link rel="stylesheet" href="../static/css/base.css">
     <link rel="stylesheet" href="../static/css/common.css">
@@ -157,7 +157,7 @@
         <!-- Swiper -->
         <div class="swiper-container swiper-container6">
           <div class="swiper-wrapper">
-            <!-- 更改2020/11/11 -->
+            
             <div class="swiper-slide">
               <div class="logo-list">
                 <ul>
@@ -569,7 +569,7 @@
           <!-- Swiper -->
           <div class="swiper-container swiper-container-phone6">
             <div class="swiper-wrapper">
-              <!-- 更改2020/11/11 -->
+              
               <div class="swiper-slide">
                 <div class="phone-logo-list">
                   <ul>
@@ -922,6 +922,14 @@
     $(e.target).css({
       'transform': 'scale(1, 1)'
     })
+  })
+
+  $('.phone-media-report > ul > li > .cover-black').on('touchstart', function () {
+    $(this).hide()
+  })
+
+  $('.phone-media-report > ul > li > .cover-black').on('touchend', function () {
+    $(this).show()
   })
 
 })()

@@ -85,6 +85,10 @@
   font-size: 14px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .pages-detail > .img {
   text-align: center;
   margin-bottom: 3.125vw;
