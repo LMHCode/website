@@ -319,6 +319,10 @@
   object-fit: cover;
 }
 
+.phone-logo-list > ul > li > img {
+  height: auto;
+}
+
 .swiper-pagination1 {
   bottom: 22px !important;
 }

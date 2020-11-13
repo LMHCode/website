@@ -211,6 +211,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .phone-page-bottom > .phone-logo-code > .phone-logo-tell, .phone-logo-tell > .phone-tell {
@@ -223,7 +224,7 @@
 }
 
 .phone-logo-tell > .phone-tell > span {
-  margin: 3vw 0 1vw 0;
+  margin: 0 0 1vw 0;
   color: #AAAAAA;
   font-size: 2.343vw;
 }
@@ -235,9 +236,16 @@
 
 .phone-logo-code > .phone-code {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-end;
+  justify-content: flex-end;
   padding-bottom: 5px;
+}
+
+.phone-logo-code > .phone-code > span {
+  font-size: 2.343vw;
+  color: #AAAAAA;
+  margin-bottom: 1.5625vw;
 }
 
 .phone-logo-code > .phone-code >img {
@@ -246,7 +254,6 @@
 
 .phone-page-bottom > .phone-rights-info {
   color: #AAAAAA;
-  margin-top: 3.9vw;
 }
 
 .phone-page-bottom > .phone-rights-info > p {
@@ -264,7 +271,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 0 13vw;
+  padding: 0 12vw;
   padding-bottom: 2.3vw;
   margin-top: 8.854vw;
 }
@@ -446,6 +453,27 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.home-head-content > .union-login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 14px;
+  color: #1657A7;
+  background: #EFF6FF;
+  border: 1px solid #D5E7FF;
+  border-radius: 0px 0px 10px 10px;
+  position: absolute;
+  z-index: 77;
+  top: 0;
+  right: 6.8vw;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.home-head-content > .union-login > img {
+  margin-right: 10px;
 }
 
 .home-head-logo > img {
@@ -662,7 +690,7 @@
 }
 
 .right-tags {
-  top: 46vh;
+  top: 49vh;
   right: 40px;
   width: 46px;
   height: 46px;
@@ -689,7 +717,7 @@
 
 .show-phone {
   cursor: pointer;
-  top: calc(44vh + 80px);
+  top: calc(48vh + 80px);
   background-color: #3B3C42;
   display: inline-block;
   overflow: hidden;
@@ -718,16 +746,40 @@
 .fixed-code {
   position: fixed;
   z-index: 666;
-  top: calc(44vh - 30px);
+  top: calc(30vh - 30px);
   right: 118px;
-  width: 136px;
-  height: 136px;
+  width: 133px;
   opacity: 0;
   pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  box-sizing: border-box; 
+  background-color: #ffffff;
+  box-shadow: 0px 0px 43px 0px rgba(223, 223, 223, 0.57);
 }
 
-.fixed-code > img {
+.fixed-code > .code-item {
+  border-bottom: 1px dashed #DCDCDC;
+  padding: 10px 0;
+}
+
+.fixed-code > .code-item:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.fixed-code > .code-item > img {
   width: 100%;
+}
+
+.fixed-code > .code-item > span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #999999;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  line-height: 1;
 }
 
 .fixed-code-animation {
@@ -1028,6 +1080,13 @@
   cursor: pointer;
 }
 
+.crumbs > .crumbs-item:nth-child(2) {
+  cursor: pointer;
+  max-width: 10.4vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 /* 分页 */
 .list-paging {
   display: flex;

@@ -1,15 +1,16 @@
 /* phone */
 .phone-notice-list {
   margin-bottom: 9.7656vw;
+  flex: 1;
 }
 
-.phone-notice-list > ul > li {
+ul.phone-ul > li {
   padding: 2.6vw 0 3.9vw 0;
   border-bottom: 1px solid rgba(220, 220, 220, 0.29);
   cursor: pointer;
 }
 
-.phone-notice-list > ul > li > .phone-notice-titel { 
+ul.phone-ul > li > .phone-notice-titel { 
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -27,6 +28,12 @@
   pointer-events: none;
 }
 
+.phone-news-list {
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .phone-notice-detail {
   padding: 6.51vw 5.2vw 15.625vw 5.2vw;
   box-sizing: border-box;
@@ -34,6 +41,16 @@
 }
 
 /* PC */
+.notice-list {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.news-page {
+  flex: 1;
+}
+
 .news-list, .crumbs {
   width: 50vw;
   margin: 0 auto;
@@ -68,6 +85,7 @@
   margin: 0 auto;
   border-bottom: 1px solid #DCDCDC;
   margin-bottom: 9.375vw;
+  flex: 1;
 }
 
 .pages-detail > .titel { 

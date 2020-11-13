@@ -28,6 +28,14 @@
       // 关于我们
     }
   })
+
+  $('.phone-menu-tabs').click(function(e) {
+    if (e.target.className === 'phone-menu-tabs') {
+      $('.phone-menu-close').hide()
+      $('.phone-menu-btn').show()
+      $('.phone-menu-tabs').hide()
+    }
+  })
   
   //pc
   // 页面刷新 滚动到顶部
@@ -50,7 +58,7 @@
         break
       case '关于我们':
         break
-      case '联盟系统登陆':
+      case '联盟系统登录':
         // 更改2020/11/11
         window.location.href = 'https://lm.edianyao.com/login'
         break
@@ -95,4 +103,8 @@
     $('.fixed-code').removeClass('fixed-code-animation')
   })
   
+  // 跳到联盟系统
+  $('.union-login').click(function() {
+
+  })
 })()

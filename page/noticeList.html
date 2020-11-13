@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../static/css/common.css">
     <link rel="stylesheet" href="../static/css/media.css">
     <link rel="stylesheet" href="./noticeList.css">
+    <link rel="stylesheet" href="../static/css/pagination.css">
   </head>
   <body>
     <!-- PC端 (记得下面这一行这加个PC class 包起来) -->
@@ -26,7 +27,11 @@
             <div class="menu-item">产品介绍</div>
             <div class="menu-item">药店联盟</div>
             <div class="menu-item">关于我们</div>     
-            <div class="menu-item">联盟系统登陆</div>
+            <!-- <div class="menu-item">联盟系统登录</div> -->
+          </div>
+          <div class="union-login">
+            <img src="../static/image/user-blue-icon.png" alt="">
+            <span>联盟系统登录</span>
           </div>
         </div>   
       </div>
@@ -43,68 +48,161 @@
         <div class="crumbs-item display-no notice-detail-tag" name="item3"> > 公告详情</div>
       </div>
       <div class="news-page">
-        <div class="news-list">
-          <ul>
-            <li>
-              <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
-              <span class="date">2020-05-24</span>
-            </li>
-            <li>
-              <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
-              <span class="date">2020-05-24</span>
-            </li>
-            <li>
-              <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
-              <span class="date">2020-05-24</span>
-            </li>
-            <li>
-              <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
-              <span class="date">2020-05-24</span>
-            </li>
-            <li>
-              <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
-              <span class="date">2020-05-24</span>
-            </li>
-            <li>
-              <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
-              <span class="date">2020-05-24</span>
-            </li>
-            <li>
-              <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
-              <span class="date">2020-05-24</span>
-            </li>
-            <li>
-              <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
-              <span class="date">2020-05-24</span>
-            </li>
-            <li>
-              <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
-              <span class="date">2020-05-24</span>
-            </li>
-            <li>
-              <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
-              <span class="date">2020-05-24</span>
-            </li>
-          </ul>
+        <div id="Searchresult"></div>
+        <div id="hiddenresult" style="display:none;">
+          <!-- 列表元素 -->
+            <div class="result">
+              <div class="news-list">
+                <ul>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="result">
+              <div class="news-list">
+                <ul>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="result">
+              <div class="news-list">
+                <ul>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                  <li>
+                    <h2>· 中央第二次巡视组向国家药品监督管理局党组反馈巡视情况 </h2>
+                    <span class="date">2020-05-24</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="result"></div>
+            <div class="result"></div>
+            <div class="result"></div>
+            <div class="result"></div>
+            <div class="result"></div>
+            <div class="result"></div>
         </div>
-        <div class="list-paging content-max-width">
-          <div class="pre"></div>
-          <div class="nums">1</div>
-          <div class="nums">2</div>
-          <div class="nums">3</div>
-          <div class="nums">4</div>
-          <div class="nums">5</div>
-          <div class="nums">6</div>
-          <div class="nums-ignore">...</div>
-          <div class="nums">20</div>
-          <div class="next"></div>
-        </div>
+        <div id="Pagination" class="pagination"><!-- 这里显示分页 --></div>
       </div>
 
       <!-- page bottom -->
       <div class="page-bottom">
         <div class="bottom-content content-max-width">
-          <div class="logo-code">
+          <!-- <div class="logo-code">
             <div class="log-tag">
               <div class="log">
                 <img src="../static/image/bottom-logo.png" alt="">
@@ -116,13 +214,12 @@
                 <a href="">加入我们</a>
               </div>
             </div>
-          </div> 
+          </div>  -->
           
           <div class="copy-right-call">
             <div class="rights-info">
-              <p>友情链接：<a>海王集团</a>     |     <a>全药网</a>      |      <a>海王生物</a></p>
-              <p>Copyright @ 2022 深圳市易点药健康服务有限公司 备案号：粤ICP备18151375</p>
-              
+              <p>友情链接：<a>海王集团</a>     |     <a>全药网</a>      |      <a>星辰药房</a>      |      <a>国民健康云</a></p>
+              <p>Copyright @ 2022 深圳市易点药健康服务有限公司 备案号：粤ICP备18151375</p>     
               <p>公司地址：广东省南山区科技中三路海王银河科技大厦18楼 </p>
               <p>医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00025号</p>
               <p>互联网药品信息服务资格证编号：（粤）经营性-2019-0032</p>
@@ -156,7 +253,18 @@
         <img src="../static/image/code-icon.png" alt="">
       </div>
       <div class="fixed-code">
-        <img src="../static/image/fixed-code.png" alt="">
+        <div class="code-item">
+          <img src="../static/image/ydy-code.png" alt="">
+          <span>APP</span>
+        </div>
+        <div class="code-item">
+          <img src="../static/image/ydy-wx-code.png" alt="">
+          <span>小程序</span>
+        </div>
+        <div class="code-item">
+          <img src="../static/image/ydy-h5-code.png" alt="">
+          <span>微信公众号</span>
+        </div>
       </div>
 
       
@@ -169,7 +277,7 @@
     </div>
 
     <!-- 移动端 -->
-    <div class="PHONE">
+    <div class="PHONE phone-news-list">
       <!-- head menu -->
       <div class="phone-head-menu">
         <img src="../static/image/logo.png" alt="">
@@ -195,63 +303,110 @@
       </div>
 
       <!-- notice list -->
-      <div class="phone-notice-list">
-        <div class="phone-loading">
-          <div class="loading-text">加载中...</div>
+      <div class="phone-notice-list">   
+        <div id="Searchresult-phone"></div>
+        <div id="hiddenresult-phone" style="display:none;">
+          <!-- 列表元素 -->
+            <div class="result">
+              <ul class="phone-ul">
+                <li>
+                  <div class="phone-notice-titel"><span>· </span>1中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
+                  <div class="phone-date">2020-08-21</div>
+                </li>
+                <li>
+                  <div class="phone-notice-titel"><span>· </span>2中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
+                  <div class="phone-date">2020-08-21</div>
+                </li>
+                <li>
+                  <div class="phone-notice-titel"><span>· </span>3中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
+                  <div class="phone-date">2020-08-21</div>
+                </li>
+                <li>
+                  <div class="phone-notice-titel"><span>· </span>4中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
+                  <div class="phone-date">2020-08-21</div>
+                </li>
+                <li>
+                  <div class="phone-notice-titel"><span>· </span>5中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
+                  <div class="phone-date">2020-08-21</div>
+                </li>
+              </ul>
+            </div>
+            <div class="result">
+              <ul  class="phone-ul">
+                <li>
+                  <div class="phone-notice-titel"><span>· </span>1中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
+                  <div class="phone-date">2020-08-21</div>
+                </li>
+                <li>
+                  <div class="phone-notice-titel"><span>· </span>2中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
+                  <div class="phone-date">2020-08-21</div>
+                </li>
+                <li>
+                  <div class="phone-notice-titel"><span>· </span>3中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
+                  <div class="phone-date">2020-08-21</div>
+                </li>
+                <li>
+                  <div class="phone-notice-titel"><span>· </span>4中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
+                  <div class="phone-date">2020-08-21</div>
+                </li>
+                <li>
+                  <div class="phone-notice-titel"><span>· </span>5中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
+                  <div class="phone-date">2020-08-21</div>
+                </li>
+              </ul>
+            </div>
+            <div class="result">
+              <ul  class="phone-ul">
+                <li>
+                  <div class="phone-notice-titel"><span>· </span>1中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
+                  <div class="phone-date">2020-08-21</div>
+                </li>
+                <li>
+                  <div class="phone-notice-titel"><span>· </span>2中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
+                  <div class="phone-date">2020-08-21</div>
+                </li>
+                <li>
+                  <div class="phone-notice-titel"><span>· </span>3中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
+                  <div class="phone-date">2020-08-21</div>
+                </li>
+                <li>
+                  <div class="phone-notice-titel"><span>· </span>4中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
+                  <div class="phone-date">2020-08-21</div>
+                </li>
+                <li>
+                  <div class="phone-notice-titel"><span>· </span>5中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
+                  <div class="phone-date">2020-08-21</div>
+                </li>
+              </ul>
+            </div>
+            <div class="result"></div>
+            <div class="result"></div>
+            <div class="result"></div>
+            <div class="result"></div>
+            <div class="result"></div>
+            <div class="result"></div>
         </div>
-        <ul>
-          <li>
-            <div class="phone-notice-titel"><span>· </span>1中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
-            <div class="phone-date">2020-08-21</div>
-          </li>
-          <li>
-            <div class="phone-notice-titel"><span>· </span>2中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
-            <div class="phone-date">2020-08-21</div>
-          </li>
-          <li>
-            <div class="phone-notice-titel"><span>· </span>3中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
-            <div class="phone-date">2020-08-21</div>
-          </li>
-          <li>
-            <div class="phone-notice-titel"><span>· </span>4中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
-            <div class="phone-date">2020-08-21</div>
-          </li>
-          <li>
-            <div class="phone-notice-titel"><span>· </span>5中央第二巡视组向国家药品监督管理局党组反馈巡视情况</div>
-            <div class="phone-date">2020-08-21</div>
-          </li>
-        </ul>
-        <!-- <div class="phone-loading-more">没有更多数据</div> -->
-        <div class="list-paging phone-list-paging">
-          <div class="pre"></div>
-          <div class="nums">1</div>
-          <div class="nums">2</div>
-          <div class="nums">3</div>
-          <div class="nums">4</div>
-          <div class="nums-ignore">...</div>
-          <div class="nums">20</div>
-          <div class="next"></div>
-        </div>
+        <div id="Pagination-phone" class="pagination"><!-- 这里显示分页 --></div>
       </div>
 
       <!-- page bottom -->
       <div class="phone-page-bottom">
         <div class="phone-logo-code">
           <div class="phone-logo-tell">
-            <img src="../static/image/logo.png" alt="">
+            <!-- <img src="../static/image/logo.png" alt=""> -->
             <div class="phone-tell">
               <span>服务热线</span>
               <h1>400-803-6136</h1>
             </div>
           </div>
           <div class="phone-code">
+            <span>关注公众号</span>
             <img src="../static/image/code.png" alt="">
           </div>
         </div>
         <div class="phone-rights-info">
-          <p>友情链接：<a>海王集团</a>     |     <a>全药网</a>      |      <a>海王生物</a></p>
-          <p>Copyright @ 2022 深圳市易点药健康服务有限公司 备案号：粤ICP备18151375</p>
-          
+          <p>友情链接：<a>海王集团</a>     |     <a>全药网</a>      |      <a>星辰药房</a>      |      <a>国民健康云</a></p>
+          <p>Copyright @ 2022 深圳市易点药健康服务有限公司 备案号：粤ICP备18151375</p>     
           <p>公司地址：广东省南山区科技中三路海王银河科技大厦18楼 </p>
           <p>医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00025号</p>
           <p>互联网药品信息服务资格证编号：（粤）经营性-2019-0032</p>
@@ -262,6 +417,7 @@
   </body>
 </html>
 <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+<script type="text/javascript" src="../static/js/jquery.pagination.js"></script>
 <script type="text/javascript" src="../static/js/common.js"></script>
 <script>
   (function() {
@@ -383,7 +539,7 @@
 
     // PC
     var page = 1
-    numsHanlder()
+    // numsHanlder()
     // 面包屑点击事件
     $('.crumbs-item').click(function(e) {
       var domArr = $(e.target).nextAll();
@@ -403,59 +559,55 @@
         // 详情
       }
     })
+    
+    // pc
+    // 回调函数的作用是显示对应分页的列表项内容
+    // 回调函数在用户每次点击分页链接的时候执行
+    // 参数page_index{int整型}表示当前的索引页
+    var initPagination = function() {
+      var num_entries = $("#hiddenresult div.result").length;
+      // 创建分页
+      $("#Pagination").pagination(num_entries, {
+        prev_text: ' ',
+        next_text: ' ',
+        num_edge_entries: 1, //边缘页数
+        num_display_entries: 4, //主体页数
+        callback: pageselectCallback,
+        items_per_page: 1 //每页显示1项
+      });
+     }();
+     
+    function pageselectCallback(page_index, jq){
+      var new_content = $("#hiddenresult div.result:eq("+page_index+")").clone();
+      $("#Searchresult").empty().append(new_content); //装载对应分页的内容
 
-    // 分页处理
-    function numsHanlder () {
-      var numsDomArr = $('.nums')
-      var j;
-      for(j = 0; j < numsDomArr.length; j ++) {
-        if (numsDomArr[j].innerText == page) {
-          // console.log($(numsDomArr[j]).siblings(".nums"))      
-          $(numsDomArr[j]).addClass('paging-active')
-        } else {
-          // console.log(j)
-          $(numsDomArr[j]).removeClass('paging-active')
-        }
-      }
-      if (page <= 1) {
-        $('.pre').addClass('pre-bg')
-      } else {
-        $('.pre').removeClass('pre-bg')
-      }
-      if (page >= 20) {
-        $('.next').addClass('next-bg')
-      } else {
-        $('.next').removeClass('next-bg')
-      }
+      console.log('page', page_index + 1)
+      return false;
     }
 
-    // 前进
-    $('.pre').click(function() {
-      if (page <= 1) {       
-        return
-      }    
-      page --;  
-      numsHanlder()
-    })
-
-    // 后退
-    $('.next').click(function() {
-      if (page >= 20) {  
-        return
-      }  
-      page ++;
-      numsHanlder()
-    })
-
-    // 点击页码
-    $('.nums').click(function(e) {
-      page = Number(e.target.innerText)
-      numsHanlder()
-    })
-
-    // pc端列表点击事件
-    $('.news-list ul li').click(function(e) {
+    // phone
+    // 回调函数的作用是显示对应分页的列表项内容
+    // 回调函数在用户每次点击分页链接的时候执行
+    // 参数page_index{int整型}表示当前的索引页
+    var initPaginationPhone = function() {
+      var num_entriesPhone = $("#hiddenresult-phone div.result").length;
+      // 创建分页
+      $("#Pagination-phone").pagination(num_entriesPhone, {
+        prev_text: ' ',
+        next_text: ' ',
+        num_edge_entries: 1, //边缘页数
+        num_display_entries: 4, //主体页数
+        callback: pageselectCallbackPhone,
+        items_per_page: 1 //每页显示1项
+      });
+     }();
      
-    })
+    function pageselectCallbackPhone (page_index, jq) {
+      var new_contentPhone = $("#hiddenresult-phone div.result:eq("+page_index+")").clone();
+      $("#Searchresult-phone").empty().append(new_contentPhone); //装载对应分页的内容
+      console.log('pagePhone', page_index + 1)
+      return false;
+    }
+
   })()
 </script>
