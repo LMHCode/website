@@ -484,5 +484,17 @@
       direction: 'right' //设置文本标注方位
     });
     marker.setMap(map);
+
+    // 创新服务hover
+    $('.center-say-item').hover(function() {
+      console.log('hover')
+      $(this).css({
+        boxShadow: 'rgb(226, 226, 226, 0.6) 10px 10px 10px'
+      })
+    }, function() {
+      $(this).css({
+        boxShadow: 'none'
+      })
+    })
   })()
 </script>
