@@ -84,8 +84,9 @@ ul.phone-ul > li > .phone-notice-titel {
   width: 50vw;
   margin: 0 auto;
   border-bottom: 1px solid #DCDCDC;
-  margin-bottom: 9.375vw;
+  margin-bottom: 7vw;
   flex: 1;
+  padding-bottom: 2.39vw;
 }
 
 .pages-detail > .titel { 
